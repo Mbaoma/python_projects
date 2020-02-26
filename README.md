@@ -1,1 +1,1 @@
-# coding-kid
+# Mini tasks from books and videos.
