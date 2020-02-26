@@ -1,21 +1,18 @@
-x= 20
-if 0<x and x>10:
-	print('tes')
-else:
-	print('nor')
-print('------------')
 #recursion
+#A timed countdown
 import time
 def count_down(x):
 	time.sleep(2.4)
 	if x <= 0:
-		print('mask off')
+		print('Mask off')
 	else:
 		print(x)
 		count_down(x-1)
 
-count_down(int(input('starting value for coundown: ')))
+count_down(int(input('Enter a starting value for coundown: ')))
 print('--------------------')
+
+#Print your favorite line six(6) times
 import time
 def favorite_line(a,y):
 	time.sleep(1)
