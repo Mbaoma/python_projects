@@ -1,4 +1,4 @@
-#a script that randomly selects 4 users for an AMA session
+#a script that randomly selects 3 usernames for an AMA session
 import random
 interviewed = []
 def quarantined_devs(names):
