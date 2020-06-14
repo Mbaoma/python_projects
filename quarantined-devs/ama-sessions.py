@@ -7,15 +7,20 @@ def quarantined_devs(names):
     uninterviewed_folks()
 
 def get_names():
-    for i in name_file:
-        i = i.split()
-        names.append(i)
+    for name in name_file:
+        name = name.rstrip('\n')
+        names.append(name)
 
 def interviewed_folks():
     while len(interviewed) < len(names):
         to_be_interviewed = random.sample(names, 3)
         for i in to_be_interviewed: 
             interviewed.append(i)
+            interviewed.append('Ifihan Olusheye')
+            interviewed.append('Kromate')
+            interviewed.append('LordGhostX')
+            interviewed.append('Olalekan Kolapo')
+            interviewed.append('Bello Gbadebo')
 
         interviewed_set = []
         for i in interviewed:
@@ -32,7 +37,7 @@ def uninterviewed_folks():
     print('UNINTERVIEWED FOLKS')        
     print(not_interviewed)
     
-name_file = open("C:/Users/User/Desktop/OMARRR/Codes/quarantined-devs/dev-names.csv", "r")
+name_file = open(r"C:\Users\User\Desktop\python-projects\python_projects\quarantined-devs\dev-names.csv", "r")
 names = []
 
 quarantined_devs(names)
