@@ -1,7 +1,7 @@
 #Design a class that holds the following personal data: name, address, age, and phone number.
-#Write appropriate accessor and mutator methods. Also, write a program that creates three
-#instances of the class. One instance should hold your information, and the other two 
-# should hold your friends’ or family members’ information
+#Write appropriate accessor and mutator methods. Also, write a program that creates two
+#instances of the class. One instance should hold your information, and the other  
+# should hold your employee's information
 
 class Personal_Information:
     def __init__ (self, name, address, age, phone):
@@ -52,12 +52,13 @@ def main():
     age = int(input('How old are you: '))
     phone = (input('Type your number: '))
 
-    friend_info = Personal_Information(name, address, age, phone)
+    my_info = Personal_Information(name, address, age, phone)
     print('MY INFO')
-    print('Hi, I am ', friend_info.get_your_name())
-    print('I live at ', friend_info.get_your_address())
-    print('I am ', friend_info.get_your_age(), ' years old')
-    print('Contact me via ', friend_info.get_your_phone())
+    print('Hi, I am ', my_info.get_your_name())
+    print('I live at ', my_info.get_your_address())
+    print('I am ', my_info.get_your_age(), ' years old')
+    print('Contact me via ', my_info.get_your_phone())
+    print()
 
     name = input('What is your name: ')
     address = input('Where do you live: ')
